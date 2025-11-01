@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jiayu Zou — Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap">
+  <meta name="description" content="Selected projects and interests: data visualization, web, and sustainability." />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">Jiayu Zou</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Projects</h1>
+    <h2 class="page-subtitle">Data, Web, and Playful Design</h2>
+
+    <figure class="hero">
+      <img src="images/jiayu-project.jpg" alt="Jiayu visiting an exhibition wall" width="1200" height="800" loading="lazy" decoding="async" />
+    </figure>
+
+    <section class="content">
+      <p>
+        This page highlights a few areas I’m exploring right now. The first is data visualization, where I try to make complex information feel intuitive and alive. I enjoy building charts that guide attention without overwhelming the viewer—using color, motion, and hierarchy to tell stories with data. I experiment with interactive filters, dynamic tooltips, and clean labeling to help people explore patterns at their own pace. I’ve learned that good visualization isn’t about decoration; it’s about directing focus and sparking curiosity.
+      </p>
+      <p>
+        The second area is web development, especially creating responsive and accessible interfaces. I’m drawn to semantic HTML, modular CSS, and lightweight frameworks that keep pages fast and readable. I like the balance between structure and creativity—making something functional that also feels pleasant to use. Designing with empathy for the end user has taught me that small details, like spacing and color contrast, can shape the entire experience.
+      </p>
+      <p>
+        The third theme is sustainability, particularly how design and technology can encourage responsible consumption. I’m interested in topics like recycled materials, packaging footprints, and the environmental cost of digital infrastructures. I believe that thoughtful design—whether in a product or a line of code—can reduce waste and increase awareness.
+      </p>
+      <p>
+        These threads often connect: a small web tool can compare sustainable options; a clean dashboard can reveal hidden trade-offs. I like projects that are achievable in a week or two but teach me something lasting. A simple dashboard can be a lesson in state management; a static site can refine my sense of rhythm and typography. Going forward, I hope to collaborate with people who value clarity, ethics, and purpose in both design and technology.
+      </p>
+
+      <h3>What I’m Practicing</h3>
+      <ul>
+        <li>Building small, focused web pages with semantic HTML and modern CSS</li>
+        <li>Designing color systems and type scales that feel calm and legible</li>
+        <li>Prototyping interactive charts (filters, brushing, tooltips)</li>
+        <li>Writing concise documentation and thoughtful commit messages</li>
+        <li>Exploring sustainability data and communicating trade-offs clearly</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Jiayu Zou</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

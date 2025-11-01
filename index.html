@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jiayu Zou — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap">
+  <meta name="description" content="Personal site of Jiayu (Tom) Zou. CS + Business at Northeastern, toy design, sustainability, and data projects." />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">Jiayu Zou</a>
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Welcome to My Website</h1>
+
+    <figure class="hero">
+      <img src="images/jiayu-home.jpg" alt="Jiayu at night city view" width="400" height="800" loading="lazy" decoding="async" />
+    </figure>
+
+    <section class="lead">
+      <p>
+        Hi! I’m <strong>Jiayu (Tom) Zou</strong>, a Computer Science and Business student at Northeastern University who enjoys turning ideas into useful, friendly tools. I grew up around playful, hands-on making through my family’s toy business, which sparked my curiosity about how products are designed, manufactured, and brought to life. Today, that curiosity flows into software: I like building small web apps, visualizations, and data workflows that help people see patterns, make decisions, or simply smile.
+      </p>
+      <p>
+        My current interests include <em>information visualization</em>, lightweight web stacks, and practical data analysis. I care about clean structure, readable code, and thoughtful aesthetics—whether that means a well-named function or a gentle color palette. Outside of code, I explore sustainability topics related to materials and supply chains. I’m especially interested in how recycled metals, packaging, and product lifecycles connect to real environmental outcomes. These themes often show up in my projects and writing.
+      </p>
+      <p>
+        I also serve as the Finance Officer for the Harvard CSSA HAcappella Club, where I manage club finances and support events with students from Harvard. This experience improved my communication and coordination skills, as I often work with people from different backgrounds to plan performances and activities.
+      </p>
+      <p>
+        On this site, you’ll find a sampling of projects and notes: small experiments with HTML/CSS/JS, course assignments I’ve turned into mini demos, and reflections on what I’m learning. If any of this resonates—or if you have feedback, opportunities, or ideas—please reach out via the contact links below. Thanks for visiting!
+      </p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:zou.jiayu@northeastern.edu">zou.jiayu@northeastern.edu</a></li>
+        <li>LinkedIn: <a href="www.linkedin.com/in/jiayu1123" target="_blank" rel="noopener">www.linkedin.com/in/jiayu1123</a></li>
+        <li>GitHub: <a href="https://github.com/jiayu1123" target="_blank" rel="noopener">https://github.com/jiayu1123</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Jiayu Zou</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

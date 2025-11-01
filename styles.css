@@ -1,0 +1,142 @@
+:root{
+  --bg: #0f1320;
+  --card: #171a2a;
+  --text: #e7e9ee;
+  --muted: #aab1c6;
+  --accent: #8ab4ff;
+  --accent-2: #a7ffeb;
+  --maxw: 900px;
+}
+
+*{box-sizing: border-box}
+
+html,body{
+  margin:0;
+  padding:0;
+  background: radial-gradient(1200px 600px at 10% 0%, #14182a, #0b0e1a) fixed;
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.6;
+}
+
+h1, .logo{
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+}
+
+a{ color: var(--accent); text-decoration: none; }
+a:hover{ text-decoration: underline; }
+
+.container{
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 2rem auto 4rem;
+  padding: 0 1rem;
+}
+
+.site-header{
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  background: rgba(10, 12, 22, 0.6);
+  border-bottom: 1px solid #20243a;
+  z-index: 10;
+}
+
+.nav{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0.8rem 1rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-weight: 800;
+  color: #fff;
+}
+
+.nav ul{
+  list-style: none;
+  display:flex;
+  gap:1rem;
+  margin:0;
+  padding:0;
+}
+
+.nav a{
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+}
+
+.nav a[aria-current="page"]{
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #0b0f1a;
+  font-weight: 600;
+}
+
+.hero{
+  background: var(--card);
+  border: 1px solid #232742;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.hero img{
+    max-height: 420px;  
+    width: auto;   
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  @media (max-width: 560px){
+    .hero img{ max-height: 360px; } /* 手机端再矮一点（可选） */
+  }
+  
+.hero figcaption{
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top:0.5rem;
+}
+
+h1{
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin: 1.2rem 0 0.8rem;
+}
+
+.page-title{ margin-top: 1.2rem; }
+.page-subtitle{
+  color: var(--muted);
+  font-weight:600;
+  margin-top: -0.4rem;
+}
+
+.lead, .content, .contact{
+  margin-top: 1.2rem;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid #20243a;
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+}
+
+.contact-list{
+  margin: 0.2rem 0 0.6rem;
+}
+
+.contact-list li + li{
+  margin-top: 0.25rem;
+}
+
+.site-footer{
+  border-top: 1px solid #20243a;
+  padding: 1.2rem 1rem 2rem;
+  text-align:center;
+  color: var(--muted);
+}
+
+@media (max-width: 560px){
+  .nav ul{ gap:0.4rem; }
+  .nav a{ padding: 0.35rem 0.6rem; }
+}
